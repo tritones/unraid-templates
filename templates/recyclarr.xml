@@ -35,7 +35,7 @@ Formerly named "Trash Updater".</Description>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/recyclarr</HostDir>
+      <HostDir/>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
