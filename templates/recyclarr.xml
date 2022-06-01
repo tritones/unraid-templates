@@ -21,7 +21,7 @@ Formerly named "Trash Updater".</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1654055599</DateInstalled>
+  <DateInstalled/>
   <DonateText/>
   <DonateLink/>
   <Description>A command-line application that will automatically synchronize recommended settings from TRaSH guides to your Sonarr/Radarr instances.&#xD;
@@ -48,6 +48,6 @@ Formerly named "Trash Updater".</Description>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="AppData Config Path" Target="/config" Default="" Mode="rw" Description="This is the application data directory for Recyclarr. In this directory, files like recyclarr.yml and settings.yml exist, as well as logs, cache, and other directories." Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="AppData Config Path" Target="/config" Default="" Mode="rw" Description="This is the application data directory for Recyclarr. In this directory, files like recyclarr.yml and settings.yml exist, as well as logs, cache, and other directories." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="CRON_SCHEDULE" Target="CRON_SCHEDULE" Default="@daily" Mode="" Description="Standard cron syntax for how often you want Recyclarr to run. See: https://github.com/recyclarr/recyclarr/wiki/Docker#cron-mode" Type="Variable" Display="always" Required="false" Mask="false">@daily</Config>
 </Container>
