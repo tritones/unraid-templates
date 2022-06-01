@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>recyclarr</Name>
+  <Repository>ghcr.io/recyclarr/recyclarr:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/recyclarr/recyclarr/issues</Support>
+  <Project>https://github.com/recyclarr/recyclarr</Project>
+  <Overview>A command-line application that will automatically synchronize recommended settings from TRaSH guides to your Sonarr/Radarr instances.&#xD;
+&#xD;
+Instructions here: https://github.com/recyclarr/recyclarr/wiki&#xD;
+&#xD;
+Formerly named "Trash Updater".</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tritones/unraid-templates/main/templates/img/recyclarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1654055599</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A command-line application that will automatically synchronize recommended settings from TRaSH guides to your Sonarr/Radarr instances.&#xD;
+&#xD;
+Instructions here: https://github.com/recyclarr/recyclarr/wiki&#xD;
+&#xD;
+Formerly named "Trash Updater".</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/recyclarr</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>@daily</Value>
+      <Name>CRON_SCHEDULE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="AppData Config Path" Target="/config" Default="" Mode="rw" Description="This is the application data directory for Recyclarr. In this directory, files like recyclarr.yml and settings.yml exist, as well as logs, cache, and other directories." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/recyclarr</Config>
+  <Config Name="CRON_SCHEDULE" Target="CRON_SCHEDULE" Default="" Mode="" Description="Standard cron syntax for how often you want Recyclarr to run. See: https://github.com/recyclarr/recyclarr/wiki/Docker#cron-mode" Type="Variable" Display="always" Required="false" Mask="false">@daily</Config>
+</Container>
