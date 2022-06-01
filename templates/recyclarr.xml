@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>recyclarr</Name>
   <Repository>ghcr.io/recyclarr/recyclarr:latest</Repository>
-  <Registry/>
+  <Registry>https://github.com/recyclarr/recyclarr/pkgs/container/recyclarr</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
