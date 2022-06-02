@@ -14,7 +14,7 @@
 Instructions here: https://github.com/recyclarr/recyclarr/wiki&#xD;
 &#xD;
 Formerly named "Trash Updater".</Overview>
-  <Category>Tools:</Category>
+  <Category>Tools:
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/tritones/unraid-templates/main/templates/img/recyclarr.png</Icon>
