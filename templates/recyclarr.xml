@@ -17,7 +17,7 @@ Formerly named "Trash Updater".</Overview>
   <Category>Tools:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/tritones/unraid-templates/main/templates/img/recyclarr.png</Icon>
+  <Icon>https://raw.githubusercontent.com/recyclarr/recyclarr/master/ci/notify/trash-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
