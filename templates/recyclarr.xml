@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2"> 
+<Container version="2">
   <Name>recyclarr</Name>
   <Repository>ghcr.io/recyclarr/recyclarr:latest</Repository>
   <Registry>https://github.com/recyclarr/recyclarr/pkgs/container/recyclarr</Registry>

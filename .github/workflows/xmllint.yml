@@ -10,6 +10,8 @@ on:
 
 jobs:
   build:
+    name: XML Linter
+
     runs-on: ubuntu-latest
 
     steps:
