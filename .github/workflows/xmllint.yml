@@ -1,0 +1,31 @@
+name: XML Linter
+
+on:
+  push:
+    paths:
+      - "templates/*.xml"
+  pull_request:
+    paths:
+      - "templates/*.xml"
+
+jobs:
+  build:
+    name: XML Linter
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Dependencies
+        run: sudo apt-get update -q && sudo apt-get install -qy libxml2-utils
+
+      - name: Run XML linter
+        env:
+          sha: ${{ github.sha }}
+        run: |
+          for file in $(git diff-tree --no-commit-id --name-only -r $sha ); do
+            if [[ ${file} == *.xml ]] && [[ -f ${file} ]]
+            then
+              xmllint $file
+            fi
+          done;
