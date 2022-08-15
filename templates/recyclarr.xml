@@ -11,14 +11,16 @@
   <Project>https://github.com/recyclarr/recyclarr</Project>
   <Overview>A command-line application that will automatically synchronize recommended settings from TRaSH guides to your Sonarr/Radarr instances.&#xD;
 &#xD;
-Instructions here: https://github.com/recyclarr/recyclarr/wiki&#xD;
+As of v2.3.0 the image is rootless and the Nobody user must be passed via the Extra Parameter '--user="99:100"'. The PUID and PGID environment variables are no longer used and must be removed.&#xD;
+&#xD;
+Full instructions here: https://github.com/recyclarr/recyclarr/wiki&#xD;
 &#xD;
 Formerly named "Trash Updater".</Overview>
   <Category>Tools:</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/recyclarr/recyclarr/master/ci/notify/trash-icon.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--user="99:100"</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled/>
@@ -26,7 +28,9 @@ Formerly named "Trash Updater".</Overview>
   <DonateLink/>
   <Description>A command-line application that will automatically synchronize recommended settings from TRaSH guides to your Sonarr/Radarr instances.&#xD;
 &#xD;
-Instructions here: https://github.com/recyclarr/recyclarr/wiki&#xD;
+As of v2.3.0 the image is rootless and the Nobody user must be passed via the Extra Parameter '--user="99:100"'. The PUID and PGID environment variables are no longer used and must be removed.&#xD;
+&#xD;
+Full instructions here: https://github.com/recyclarr/recyclarr/wiki&#xD;
 &#xD;
 Formerly named "Trash Updater".</Description>
   <Networking>
@@ -46,20 +50,8 @@ Formerly named "Trash Updater".</Description>
       <Name>CRON_SCHEDULE</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value>99</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
   <Config Name="AppData Config Path" Target="/config" Default="" Mode="rw" Description="This is the application data directory for Recyclarr. In this directory, files like recyclarr.yml and settings.yml exist, as well as logs, cache, and other directories." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="CRON_SCHEDULE" Target="CRON_SCHEDULE" Default="@daily" Mode="" Description="Standard cron syntax for how often you want Recyclarr to run. See: https://github.com/recyclarr/recyclarr/wiki/Docker#cron-mode" Type="Variable" Display="always" Required="false" Mask="false">@daily</Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
