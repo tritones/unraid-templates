@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>geoipupdate</Name>
+  <Repository>maxmindinc/geoipupdate</Repository>
+  <Registry>https://hub.docker.com/r/maxmindinc/geoipupdate/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/maxmind/geoipupdate/issues</Support>
+  <Project>https://github.com/maxmind/geoipupdate</Project>
+  <Overview>The MaxMind GeoIP Update program performs automatic updates of GeoIP2 and GeoIP Legacy binary databases. CSV databases are not supported.&#xD;
+&#xD;
+https://hub.docker.com/r/maxmindinc/geoipupdate/</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tritones/unraid-templates/main/templates/img/geoipupdate.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The MaxMind GeoIP Update program performs automatic updates of GeoIP2 and GeoIP Legacy binary databases. CSV databases are not supported.&#xD;
+&#xD;
+https://hub.docker.com/r/maxmindinc/geoipupdate/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/usr/share/GeoIP</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>GEOIPUPDATE_ACCOUNT_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>GEOIPUPDATE_LICENSE_KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>GeoLite2-City</Value>
+      <Name>GEOIPUPDATE_EDITION_IDS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>168</Value>
+      <Name>GEOIPUPDATE_FREQUENCY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Database Location Path" Target="/usr/share/GeoIP" Default="" Mode="rw" Description="Container Path: /usr/share/GeoIP" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="GEOIPUPDATE_ACCOUNT_ID" Target="GEOIPUPDATE_ACCOUNT_ID" Default="" Mode="" Description="Container Variable: GEOIPUPDATE_ACCOUNT_ID" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="GEOIPUPDATE_LICENSE_KEY" Target="GEOIPUPDATE_LICENSE_KEY" Default="" Mode="" Description="Container Variable: GEOIPUPDATE_LICENSE_KEY" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="GEOIPUPDATE_EDITION_IDS" Target="GEOIPUPDATE_EDITION_IDS" Default="GeoLite2-City" Mode="" Description="Container Variable: GEOIPUPDATE_EDITION_IDS" Type="Variable" Display="always" Required="true" Mask="false">GeoLite2-City</Config>
+  <Config Name="GEOIPUPDATE_FREQUENCY" Target="GEOIPUPDATE_FREQUENCY" Default="168" Mode="" Description="Update every # hours (default of 168 = 7 days)" Type="Variable" Display="always" Required="true" Mask="false">168</Config>
+</Container>
