@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>LunaSea</Name>
+  <Repository>ghcr.io/jagandeepbrar/lunasea:stable</Repository>
+  <Registry>https://github.com/JagandeepBrar/LunaSea/pkgs/container/lunasea</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/JagandeepBrar/LunaSea/issues</Support>
+  <Project>https://www.lunasea.app/</Project>
+  <Overview>LunaSea is a fully featured, open source self-hosted controller focused on giving you a seamless experience between all of your self-hosted media software remotely on your devices. LunaSea currently supports:&#xD;
+&#xD;
+- Lidarr&#xD;
+- Radarr&#xD;
+- Sonarr&#xD;
+- NZBGet&#xD;
+- SABnzbd&#xD;
+- Newznab Indexer Searching&#xD;
+- NZBHydra2&#xD;
+- Tautulli&#xD;
+- Wake on LAN&#xD;
+&#xD;
+LunaSea even comes with support for webhook-based push notifications, multiple instances of applications using profiles, backup and restore functionality for your configuration, an AMOLED black theme, and more!</Overview>
+  <Category>Downloaders: MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/JagandeepBrar/LunaSea/b23f8ad633ee40c65e6733081c5c644b081e36d0/assets/icon/icon_web.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1664036082</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>LunaSea is a fully featured, open source self-hosted controller focused on giving you a seamless experience between all of your self-hosted media software remotely on your devices. LunaSea currently supports:&#xD;
+&#xD;
+- Lidarr&#xD;
+- Radarr&#xD;
+- Sonarr&#xD;
+- NZBGet&#xD;
+- SABnzbd&#xD;
+- Newznab Indexer Searching&#xD;
+- NZBHydra2&#xD;
+- Tautulli&#xD;
+- Wake on LAN&#xD;
+&#xD;
+LunaSea even comes with support for webhook-based push notifications, multiple instances of applications using profiles, backup and restore functionality for your configuration, an AMOLED black theme, and more!</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="Web UI" Target="80" Default="8080" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+</Container>
