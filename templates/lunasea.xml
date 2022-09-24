@@ -26,7 +26,7 @@ LunaSea even comes with support for webhook-based push notifications, multiple i
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/JagandeepBrar/LunaSea/b23f8ad633ee40c65e6733081c5c644b081e36d0/assets/icon/icon_web.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1664036082</DateInstalled>
